@@ -1,0 +1,13 @@
+@use './mixins.scss' as *;
+@use './typography.scss' as *;
+
+
+
+$accent: slategrey;
+$grey-purple: rgb(82, 67, 88);
+
+
+//responsive breakpoint variables
+$desktop-width: 1280px;
+$tablet-width: 768px;
+$mobile-width: 320px;

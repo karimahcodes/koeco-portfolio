@@ -1,0 +1,49 @@
+// @use 
+
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(129, 87, 133, 0.75);
+    // background-color: rgb(11, 228, 199);
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    
+    
+&__left-div{
+    padding: 0 10rem 0 2rem;
+}
+
+&__title{
+    color: black;
+    padding: .5rem;
+ }
+
+&__subtitle{
+    padding: .5rem;   
+}
+
+&__navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 1rem;
+}
+&__text{
+    padding: .5rem;
+
+   
+}
+ &__text:hover{
+        font-weight: 700;
+        color: turquoise;
+    }
+
+
+
+
+
+
+}
+
