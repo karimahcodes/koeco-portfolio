@@ -13,22 +13,75 @@
     // color: white;
     height: 100vh;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     @include tablet{
     padding: 5rem 10rem;
     }
     
+    &__subnav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__subnav-link{
+        padding: 1rem 2rem;
+        margin: .5rem 1rem;
+        color: $bright-purple;
+    }
+    &__subnav-text{
+        border-bottom: $higlighter 2px solid;
+        font-size: $regular-font;
+    }
+
+    &__subnav-link:hover{
+        @include link-hover;
+        text-decoration: underline wavy $bright-purple;
+    }
+
+
+    // &__about-group{
+    //     // position: absolute;
+    //     border: red solid 2px;
+    //     display: flex;
+    //     flex-direction:column;
+    //     justify-content: center;
+    //     // flex-wrap: wrap;
+
+    //     padding: 0;
+    //     height: 30rem;
+    //     width: 30rem;
+    // }
+
     &__about {
         background: $light-grey-purple;
         border: solid lightgrey .25rem;
         border-radius: .35rem;
         
-        margin: 1rem 0;
+        margin: 1rem 1rem;
         padding: 1rem 2rem;
         width: 20rem;
 
         @include tablet{
             width: 40rem
+        }
+
+        &--image{
+            // position: relative;
+            z-index: -1;
+            top: 6rem;
+            left: 15rem;
+            background: repeating-radial-gradient(#000000, #bd4ee9, #000000, #fcf9fdee .0001px);
+            height: 15rem;
+            width: 15rem;
+
+            color: white //placeholder for div visibility
+            
         }
 
     }
@@ -47,17 +100,23 @@
         padding: 1rem 2rem;
         display: flex;
         flex-direction: column;
-
+        background-color: #d3d3d348;
+        border: .025rem solid grey;
+        border-radius: 0.5rem;
         @include tablet{
             width: 40rem
         }
     }
-    // &__title{}
+
     &__contact-form{
         display: flex;
         flex-direction: column;
     }
-    // &__label{}
+    &__label{
+        @include bold-labels;
+        padding: .25rem 0;
+        margin: .5rem 0 .25rem 0 ;
+    }
     // &__email{}
     // &__message{}
     &__btn-group{
@@ -67,10 +126,36 @@
         
     }
     &__button{
+        margin: 1rem .5rem;
         padding: .5rem 2rem;
         font-size: $regular-font
 
     }
+
     // &__email-link{}
     // &__email-link:hover{}
+
+    &__technologies{
+        background: $light-grey-purple;
+        border: solid $bright-purple .25rem;
+        border-radius: .35rem;
+        
+        display: flex;
+        flex-direction: column;
+
+        margin: 1rem 1rem;
+        padding: 1rem 2rem;
+        width: 20rem;
+    }
+
+    &__list{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    &__frontend, &__backend, &__nocode{
+        padding: .5rem 1rem;
+    }
 }
