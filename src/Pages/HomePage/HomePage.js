@@ -1,4 +1,4 @@
-import Technologies from '../../Components/Header/Technologies/Technologies';
+
 import './HomePage.scss';
 import { Link } from 'react-router-dom';
 
@@ -17,7 +17,7 @@ export default function HomePage() {
                 </a>
             </nav>
 
-           
+           <div className='home__about-group'>
             <section className='home__about'>
                 <h2 className='home__title'>About Me</h2>
                 <p className='home__body-text'> koeco reflects my passion for using tech to build community and find creative new tools to meet the needs of those not traditionally courted by the tech industry. Prior to koeco, I worked with behavioral healthcare, nonprofit and social change organizations. My preferred style of working on a project blends compassion, collaboration, and client-driven solutions with code. I can't wait to work with you!</p>
@@ -26,6 +26,7 @@ export default function HomePage() {
 
             <div className='home__about--image'>
                 TEST
+            </div>
             </div>
            
 

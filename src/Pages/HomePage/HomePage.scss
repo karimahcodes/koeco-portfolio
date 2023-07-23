@@ -11,6 +11,7 @@
 .home {
     // background-color: black;
     // color: white;
+    border: 2px solid red;
     height: 100vh;
     margin: 0;
     display: flex;
@@ -45,18 +46,18 @@
     }
 
 
-    // &__about-group{
-    //     // position: absolute;
-    //     border: red solid 2px;
-    //     display: flex;
-    //     flex-direction:column;
-    //     justify-content: center;
-    //     // flex-wrap: wrap;
+    &__about-group{
+        position: relative;
+        // border: green solid 2px;
+        // display: flex;
+        // flex-direction:column;
+        // justify-content: center;
+        // flex-wrap: wrap;
 
-    //     padding: 0;
-    //     height: 30rem;
-    //     width: 30rem;
-    // }
+        padding: 0 0 6rem 0;
+        // height: 30rem;
+        // width: 30rem;
+    }
 
     &__about {
         background: $light-grey-purple;
@@ -72,16 +73,25 @@
         }
 
         &--image{
-            // position: relative;
+            position: absolute;
             z-index: -1;
             top: 6rem;
             left: 15rem;
             background: repeating-radial-gradient(#000000, #bd4ee9, #000000, #fcf9fdee .0001px);
-            height: 15rem;
-            width: 15rem;
-
-            color: white //placeholder for div visibility
+            // height: 15rem;
+            // width: 15rem;
+            color: white; //placeholder for div visibility
+            margin: 1rem 1rem;
+            padding: 1rem 2rem;
+            width: 20rem;
+            border: 2px solid $higlighter;
             
+    
+            @include tablet{
+                width: 40rem;
+                height: 10rem;
+            }
+
         }
 
     }
@@ -126,9 +136,7 @@
         
     }
     &__button{
-        margin: 1rem .5rem;
-        padding: .5rem 2rem;
-        font-size: $regular-font
+        @include btn;
 
     }
 

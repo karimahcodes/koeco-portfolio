@@ -31,3 +31,15 @@
     font-weight: 700;
     color: #40e0d0;    
 }
+
+@mixin btn{
+    margin: 1rem .5rem;
+    padding: .5rem 2rem;
+    font-size: $regular-font;
+    
+    
+}
+@mixin cta-btn{
+
+}
+
