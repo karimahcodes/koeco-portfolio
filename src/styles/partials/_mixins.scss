@@ -29,7 +29,7 @@
 
 @mixin link-hover{
     font-weight: 700;
-    color: #40e0d0;    
+    color: $higlighter;    
 }
 
 @mixin btn{
